@@ -8,8 +8,9 @@ on:
       - release_qa
       - development
   push:
-    branches:
+   branches:
       - development
+      - main
 
 jobs:
   axe-linter:
