@@ -10,7 +10,6 @@ const Home = () => {
           <Image
             source={img}
             style={styles.image}
-            accessibilityLabel="User profile picture"
             accessible={true}
           />
           <Text style={styles.title}>Welcome to LinterDemo</Text>
