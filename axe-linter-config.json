@@ -1,15 +1,19 @@
 {
-  "config": {
-    "global-libraries": [
-      "react-native"
-    ],
-    "rules": {
-      "image-has-accessibility-label": "error",
-      "has-accessibility-role": "error",
-      "has-valid-accessibility-actions": "error",
-      "has-valid-accessibility-state": "error",
-      "has-valid-accessibility-value": "error",
-      "has-valid-accessibility-role": "error"
-    }
+  "global-libraries": [
+    "react-native"
+  ],
+  "include": [
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "rules": {
+    "image-has-accessibility-label": "error",
+    "has-accessibility-role": "error",
+    "has-valid-accessibility-actions": "error",
+    "has-valid-accessibility-state": "error",
+    "has-valid-accessibility-value": "error",
+    "has-valid-accessibility-role": "error"
   }
 }
