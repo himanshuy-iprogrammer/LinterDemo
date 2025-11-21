@@ -1,20 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Pressable, Button } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Pressable, Button, Image } from 'react-native';
+import img from '../../assets/img.png';
 
 const Home = () => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
         <View style={styles.card}>
+          <Image source={img} style={styles.image} />
           <Text style={styles.title}>Welcome to LinterDemo</Text>
           <Text style={styles.subtitle}>This is a static home screen that fills the entire screen.</Text>
           <Text style={styles.description}>
             Explore the app and enjoy the features we have prepared for you.
           </Text>
         </View>
-        <Button style={styles.button} onPress={() => console.log('Check Accessibility pressed')}>
+        <TouchableOpacity style={styles.button} onPress={() => console.log('Check Accessibility pressed')}>
           <Text style={styles.buttonText}>Check Accessibility</Text>
-        </Button>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -61,6 +63,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     lineHeight: 24,
     color: '#888',
+  },
+  image: {
+    width: 100,
+    height: 100,
+    marginBottom: 20,
   },
   button: {
     marginTop: 30,
