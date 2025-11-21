@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Pressable } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Pressable, Button } from 'react-native';
 
 const Home = () => {
   return (
@@ -12,9 +12,9 @@ const Home = () => {
             Explore the app and enjoy the features we have prepared for you.
           </Text>
         </View>
-        <Pressable style={styles.button} onPress={() => console.log('Check Accessibility pressed')}>
+        <Button style={styles.button} onPress={() => console.log('Check Accessibility pressed')}>
           <Text style={styles.buttonText}>Check Accessibility</Text>
-        </Pressable>
+        </Button>
       </View>
     </View>
   );
