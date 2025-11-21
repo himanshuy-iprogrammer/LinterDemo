@@ -9,13 +9,13 @@
       "src/**/*.tsx"
     ],
 
-    "rules": [
-      "image-has-accessibility-label",
-      "has-accessibility-role",
-      "has-valid-accessibility-actions",
-      "has-valid-accessibility-state",
-      "has-valid-accessibility-value",
-      "has-valid-accessibility-role"
-    ]
+    "rules": {
+      "image-has-accessibility-label": "error",
+      "has-accessibility-role": "error",
+      "has-valid-accessibility-actions": "error",
+      "has-valid-accessibility-state": "error",
+      "has-valid-accessibility-value": "error",
+      "has-valid-accessibility-role": "error"
+    }
   }
 }
