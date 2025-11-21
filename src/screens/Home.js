@@ -7,7 +7,12 @@ const Home = () => {
     <View style={styles.container}>
       <View style={styles.content}>
         <View style={styles.card}>
-          <Image source={img} style={styles.image} />
+          <Image
+            source={img}
+            style={styles.image}
+            accessibilityLabel="User profile picture"
+            accessible={true}
+          />
           <Text style={styles.title}>Welcome to LinterDemo</Text>
           <Text style={styles.subtitle}>This is a static home screen that fills the entire screen.</Text>
           <Text style={styles.description}>
