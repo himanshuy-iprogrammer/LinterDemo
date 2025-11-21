@@ -4,8 +4,8 @@ on:
   workflow_dispatch: 
   push:
     branches:
-      - development
       - main
+      - development
   pull_request:
     branches:
       - master
@@ -16,12 +16,13 @@ on:
 jobs:
   axe-linter:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Run Axe DevTools Linter
-        uses: dequelabs/axe-devtools-linter-action@v3
+        uses: dequelabs/axe-linter-action@v1
         with:
-          api-key: ${{ secrets.DEQUE_API_KEY }}
-          config-path: ./axe-linter-config.json
+          api_key: ${{ secrets.DEQUE_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
