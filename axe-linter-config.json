@@ -1,0 +1,21 @@
+{
+  "config": {
+    "global-libraries": ["react-native"],
+
+    "include": [
+      "src/**/*.js",
+      "src/**/*.jsx",
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+
+    "rules": [
+      "image-has-accessibility-label",
+      "has-accessibility-role",
+      "has-valid-accessibility-actions",
+      "has-valid-accessibility-state",
+      "has-valid-accessibility-value",
+      "has-valid-accessibility-role"
+    ]
+  }
+}
