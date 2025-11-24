@@ -18,7 +18,7 @@ const Home = () => {
             Explore the app and enjoy the features we have prepared for you.
           </Text>
         </View>
-        <TouchableOpacity style={styles.button} onPress={() => console.log('Check Accessibility pressed')}>
+        <TouchableOpacity style={styles.button} accessible={true} onPress={() => console.log('Check Accessibility pressed')}>
           <Text style={styles.buttonText}>Check Accessibility</Text>
         </TouchableOpacity>
       </View>
