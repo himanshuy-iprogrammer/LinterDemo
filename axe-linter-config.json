@@ -1,6 +1,6 @@
 {
-  "global-libraries": [
-    "react-native"
+  "plugins": [
+    "react-native-a11y"
   ],
   "include": [
     "src/**/*.js",
@@ -9,11 +9,12 @@
     "src/**/*.tsx"
   ],
   "rules": {
-    "image-has-accessibility-label": "error",
-    "has-accessibility-role": "error",
-    "has-valid-accessibility-actions": "error",
-    "has-valid-accessibility-state": "error",
-    "has-valid-accessibility-value": "error",
-    "has-valid-accessibility-role": "error"
+    "react-native-a11y/accessible-has-label": "error",
+    "react-native-a11y/has-accessibility-hint": "warn",
+    "react-native-a11y/has-accessibility-role": "error",
+    "react-native-a11y/has-valid-accessibility-actions": "error",
+    "react-native-a11y/has-valid-accessibility-state": "error",
+    "react-native-a11y/no-nested-touchables": "error",
+    "react-native-a11y/use-text": "warn"
   }
 }
